@@ -1,0 +1,64 @@
+.border {
+  border: 1px solid rgb(38, 46, 55);
+  padding: 3px;
+  height: auto;
+  width: 90%;
+  padding: 5px 10px 5px 20px;
+  margin-bottom: 10px;
+}
+
+input {
+  /* font-weight: bold;  */
+  background-color: rgb(253, 253, 253);
+  width: 100%;
+  border-radius: 4px;
+  /* margin-bottom: 5px; */
+}
+p {
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+}
+.btnSumit {
+  background-color: #4299e1;
+  color: white;
+  width: 90%;
+  padding: 5px 7px;
+  border-radius: 4px;
+}
+.btnSumit:hover {
+  color: white;
+  background-color: #3986c5;
+  width: 90%;
+  padding: 5px 7px;
+  border-radius: 4px;
+}
+.parent {
+  margin: auto;
+  padding: 30px 10px;
+  width: 350px;
+  /* height: 700px; */
+  /* padding-top: 40px; */
+  /* background-image: url("https://images.unsplash.com/photo-1530305408560-82d13781b33a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80"); */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  margin-top: 20px;
+  border-radius: 5px;
+}
+.overall {
+  height: 100vh;
+  margin-top: 130px;
+}
+form .validRes {
+  color: red;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 20px;
+  font-size: small;
+  height: 20px;
+}
+.paragraph {
+  color: black;
+}
+form {
+  font-family: inherit;
+}

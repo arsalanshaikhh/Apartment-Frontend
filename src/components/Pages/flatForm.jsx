@@ -55,7 +55,7 @@ export const FlatForm = () => {
     }
 
     axios
-      .post("https://apartmentauth.herokuapp.com/flat", formData)
+      .post("https://flat.onrender.com/flat", formData)
       .then(() => {
         // alert("Flat added succussfully");
         swal("Flat added succussfully!", "", "success");

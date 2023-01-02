@@ -27,7 +27,7 @@ export const FlatDetails = () => {
     const { _id } = params;
 
     axios({
-      url: `https://apartmentauth.herokuapp.com/flat/${_id}`,
+      url: `https://flat.onrender.com/flat/${_id}`,
       method: "GET",
     })
       .then((r) => setData(r.data))

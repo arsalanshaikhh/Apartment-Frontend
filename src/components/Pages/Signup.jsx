@@ -47,7 +47,7 @@ export const Signup = () => {
     setUserData([...data, userData]);
 
     axios
-      .post("https://apartmentauth.herokuapp.com/register", userData)
+      .post("https://flat.onrender.com/register", userData)
       .then(() => {
         alert("SignUp Successfully");
         swal("Account Created Successfully!", "", "success");
@@ -66,7 +66,7 @@ export const Signup = () => {
   }, []);
 
   const getdata = () => {
-    axios.get("https://apartmentauth.herokuapp.com/register").then((res) => {
+    axios.get("https://flat.onrender.com/register").then((res) => {
       setData(res.data);
       console.log(res.data);
     });

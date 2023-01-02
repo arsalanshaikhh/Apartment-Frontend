@@ -27,7 +27,7 @@ export const Login = () => {
   const handleLogin = (email, password) => {
     auth.login(!user); /* auth */
     axios
-      .post("https://apartmentauth.herokuapp.com/login", {
+      .post("https://flat.onrender.com/login", {
         email: email,
         password: password,
       })

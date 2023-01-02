@@ -35,7 +35,7 @@ export const Flat = () => {
   const getFlatData = () => {
     setLoading(true);
     axios({
-      url: `https://apartmentauth.herokuapp.com/flat`,
+      url: `https://flat.onrender.com/flat`,
       method: "GET",
     })
       .then((r) => setData(r.data), setLoading(false))
@@ -107,7 +107,7 @@ export const Flat = () => {
   const deleteButton = (_id) => {
     // console.log(_id);
     axios
-      .delete(`${"https://apartmentauth.herokuapp.com/flat"}/${_id}`)
+      .delete(`${"https://flat.onrender.com/flat"}/${_id}`)
       .then(() => {
         let newList = data.filter((el) => el._id !== _id);
 

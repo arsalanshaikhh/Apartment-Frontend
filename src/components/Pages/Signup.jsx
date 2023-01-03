@@ -66,7 +66,7 @@ export const Signup = () => {
   }, []);
 
   const getdata = () => {
-    axios.get("https://flat.onrender.com/register").then((res) => {
+    axios.get("https://shy-rose-trout-sock.cyclic.app/register").then((res) => {
       setData(res.data);
       console.log(res.data);
     });

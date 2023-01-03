@@ -27,7 +27,7 @@ export const Login = () => {
   const handleLogin = (email, password) => {
     auth.login(!user); /* auth */
     axios
-      .post("https://flat.onrender.com/login", {
+      .post("https://shy-rose-trout-sock.cyclic.app/login", {
         email: email,
         password: password,
       })

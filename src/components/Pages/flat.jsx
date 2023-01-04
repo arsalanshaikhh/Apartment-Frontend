@@ -106,13 +106,11 @@ export const Flat = () => {
   // delete data
   const deleteButton = (_id) => {
     // console.log(_id);
-    axios
-      .delete(`${"https://flat.onrender.com/flat"}/${_id}`)
-      .then(() => {
-        let newList = data.filter((el) => el._id !== _id);
+    axios.delete(`${"https://flat.onrender.com/flat"}/${_id}`).then(() => {
+      let newList = data.filter((el) => el._id !== _id);
 
-        setData(newList);
-      });
+      setData(newList);
+    });
   };
 
   return (
@@ -263,7 +261,10 @@ export const Flat = () => {
         <WrapItem>
           <Box className="leftContainer">
             <WrapItem>
-              <Center className="btnBorderSelect"></Center>
+              <Center
+                className="btnBorderSelect"
+                style={{ backgroundColor: "white" }}
+              ></Center>
             </WrapItem>
             {/* owner tenant */}
           </Box>

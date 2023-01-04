@@ -31,7 +31,14 @@ export const AllRoutes = () => {
           {/* :id params */}
           <Route path="/flatdetails/:_id" element={<FlatDetails />}></Route>
 
-          <Route path="/flatform" element={<FlatForm />}>
+          <Route
+            path="/flatform"
+            element={
+              <ProtectedRoute>
+                <FlatForm />
+              </ProtectedRoute>
+            }
+          >
             flatForm
           </Route>
           <Route path="/login" element={<Login />}>
